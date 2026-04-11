@@ -31,7 +31,7 @@ const Hero: React.FC<HeroProps> = ({ scrollTo, setSectionRef }) => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight text-dark mb-4">
-            Hi, I'm Alex. <br /> A <span className="text-primary">UX Designer</span>.
+            Hi, I'm Anandhan V. <br /> A <span className="text-primary">UX Designer</span>.
           </h1>
           <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-lg mx-auto md:mx-0">
             Crafting intuitive and engaging user experiences that bridge the gap between users and technology.
@@ -55,7 +55,7 @@ const Hero: React.FC<HeroProps> = ({ scrollTo, setSectionRef }) => {
             alt="UX Designer working on a laptop with design mockups"
             className="w-full max-w-md mx-auto md:max-w-none rounded-lg shadow-2xl object-cover transform hover:scale-105 transition-transform duration-500"
             loading="eager"
-            onError="this.onerror=null;this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=90';"
+            onError={(e) => { const el = e.currentTarget; el.onerror = null; el.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=90'; }}
           />
         </motion.div>
       </div>
