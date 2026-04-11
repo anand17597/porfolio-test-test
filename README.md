@@ -1,2 +1,9 @@
-# porfolio-test-test
-porfolio-test-test - built with Surge AI (React + Vite + TypeScript)
+# porfolio-test
+
+> React + TypeScript + Vite + Tailwind — generated with Surge Site Studio
+
+## Scripts
+
+npm install
+npm run dev
+Open [http://localhost:5173](http://localhost:5173).
