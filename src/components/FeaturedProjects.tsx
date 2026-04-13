@@ -54,7 +54,7 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ setSectionRef }) =>
   });
 
   const containerVariants = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0.96 },
     show: {
       opacity: 1,
       transition: {
@@ -64,7 +64,7 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ setSectionRef }) =>
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0.96, y: 50 },
     show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
@@ -80,7 +80,7 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ setSectionRef }) =>
       <div className="max-w-7xl mx-auto text-center">
         <motion.h2
           className="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-4"
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0.96, y: -20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
@@ -88,7 +88,7 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ setSectionRef }) =>
         </motion.h2>
         <motion.p
           className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto"
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0.96, y: -20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
