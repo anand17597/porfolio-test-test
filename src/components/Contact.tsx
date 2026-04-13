@@ -25,7 +25,7 @@ const Contact: React.FC<ContactProps> = ({ setSectionRef }) => {
       <div className="max-w-3xl mx-auto text-center">
         <motion.h2
           className="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-4"
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0.96, y: -20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
@@ -33,7 +33,7 @@ const Contact: React.FC<ContactProps> = ({ setSectionRef }) => {
         </motion.h2>
         <motion.p
           className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto"
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0.96, y: -20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
@@ -42,7 +42,7 @@ const Contact: React.FC<ContactProps> = ({ setSectionRef }) => {
 
         <motion.div
           className="flex flex-col items-center justify-center gap-6"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0.96, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
