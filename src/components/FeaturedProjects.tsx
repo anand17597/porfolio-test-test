@@ -111,8 +111,7 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ setSectionRef }) =>
                 src={project.image}
                 alt={project.title}
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-                loading="lazy"
-                onError="this.onerror=null;this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=90';"
+                loading="lazy" onError={(e) => { const el = e.currentTarget; el.onerror = null; el.src = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=90"; }}
               />
               <div className="p-6 text-left">
                 <h3 className="text-xl font-semibold text-dark mb-2">{project.title}</h3>
