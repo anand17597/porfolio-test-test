@@ -26,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({ scrollTo, setSectionRef }) => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 z-10">
         <motion.div
           className="text-center md:text-left md:w-1/2"
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0.96, x: -50 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
@@ -46,7 +46,7 @@ const Hero: React.FC<HeroProps> = ({ scrollTo, setSectionRef }) => {
 
         <motion.div
           className="md:w-1/2 mt-12 md:mt-0"
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0.96, x: 50 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
